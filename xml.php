@@ -1,6 +1,7 @@
 <?php
 		
 		//Commit próba komment
+		//Komment 2
 
 				$mysql_host = "localhost";
                 $mysql_database = "1035483";
