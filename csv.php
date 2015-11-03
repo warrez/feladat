@@ -34,7 +34,7 @@
 					}
 				}
 				header("Content-type: text/csv");
-				header("Content-Disposition: attachment; filename=report.csv");
+				header("Content-Disposition: attachment; filename=weatherdata.csv");
 				header("Pragma: no-cache");
 				header("Expires: 0");
 				echo $adatok;
