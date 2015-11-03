@@ -1,8 +1,4 @@
 <?php
-		
-		//Commit próba komment
-		//Komment 2
-
 				$mysql_host = "localhost";
                 $mysql_database = "1035483";
                 $mysql_user = "1035483";
@@ -37,9 +33,10 @@
 								if(mysql_num_rows($edt) > 0):
 									while($idj = mysql_fetch_assoc($edt)):
 										$data = $idojaras->addChild('data');
-										$varos = $data->addChild('varos', $idj['varos']);
-										$homerseklet = $data->addChild('homerseklet', $idj['homerseklet']);
-										$aktido = $data->addChild('aktido', $idj['aktido']);					
+										$varos = $data->addChild('varos');
+										$varos->addAttribute("name",$idj['varos']);
+										$homerseklet = $varos->addChild('homerseklet', $idj['homerseklet']);
+										$aktido = $varos->addChild('aktido', $idj['aktido']);			
 									endwhile;
 								endif;
 						header("Content-type: text/xml");
