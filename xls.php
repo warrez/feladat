@@ -55,7 +55,7 @@
 							 
 							// allow exported file to download forcefully
 							header("Content-type: application/octet-stream");
-							header("Content-Disposition: attachment; filename=export.xls");
+							header("Content-Disposition: attachment; filename=weatherdata.xls");
 							header("Pragma: no-cache");
 							header("Expires: 0");
 							print "$header\n$data";
