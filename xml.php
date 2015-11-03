@@ -1,4 +1,7 @@
 <?php
+		
+		//Commit próba komment
+
 				$mysql_host = "localhost";
                 $mysql_database = "1035483";
                 $mysql_user = "1035483";
