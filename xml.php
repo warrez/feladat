@@ -40,7 +40,7 @@
 									endwhile;
 								endif;
 						header("Content-type: text/xml");
-						header("Content-Disposition: attachment; filename=data.xml");
+						header("Content-Disposition: attachment; filename=weatherdata.xml");
 						header("Pragma: no-cache");
 						header("Expires: 0");
 						echo $xmli->asXML();
